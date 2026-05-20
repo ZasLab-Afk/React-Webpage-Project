@@ -6,6 +6,8 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/c6175122c9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/c6175122c9.js" crossorigin="anonymous"></script>
 
 </head>
                      <!--Navigation Bar Info-->
@@ -13,17 +15,22 @@
         <div class="nav__container">
         <div class="logo">
             <img src="react.img/tlogo.svg" alt="treact logo" class="tlogo__img">
-            <p class="nav__title">Treact</p>
+            <p class="nav__title"><a href="index.html">Treact</a></2p>
         </div>
         <ul class="nav__links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#" class="nav__link">About</a></li>
+            <li><a href="#" class="nav__link">Blog</a></li>
+            <li><a href="#" class="nav__link">Pricing</a></li>
+            <li><a href="#" class="nav__link">Contact Us</a></li>
             <li><a href="#" class="nav__login">Login</a></li>
-            <li><a href="#" class="signup__btn">Sign Up</a></li>
+            <li><a href="sign.up.html" class="signup__btn">Sign Up</a></li>
         </ul>
+
+        <div class="hamburger">
+            <i class="fa-solid fa-bars fa-lg" style="color: rgb(109, 105, 105);" id="bars"></i>
         </div>
+
+
     </nav>
                             <!--End of Navigation Bar-->
 
@@ -39,7 +46,7 @@
 
                     <form>
                         <div class="intro__label">
-                        <input type="email" name="intro__email" id="intro__email" placeholder="Enter your email address">
+                        <input type="email" name="intro__email" id="intro__email" placeholder="Enter your email address" class="intro__email">
                         <button type="submit" class="intro__btn">Get Started</button>
                         </div>
                     </form>
@@ -254,7 +261,7 @@
         </section>
 
 
-     <section id="Pricing">
+     <section id="pricing">
 
       <div class="pricing__container">
          <div class="pricing__inner--container">
@@ -264,88 +271,91 @@
 
             <p class="pricing__desc">Lorem ipsum dolor sit amet consectetur accusantium mollitia nesciunt corporis aspernatur dicta totam, velit perferendis!</p>
          </div>
-                        <!--First Card-->
-        <div class="main__card--container">
 
-                        
-         <div class="pcards__container">
-            <div class="pcard--container">
-                <div class="top1">
-                    <p>Personal</p>
-                    <p class="price1">$17.99</p>
-                    <p class="per1">MONTHLY</p>
 
-                 </div>
+                        <!--Cards Nav-->
+         <div class="main__card--container">
 
-                 <div class="middle1">
-                    <p class="mtitle">For Individuals</p>
-                    <p class="mtext">30 Templates</p>
-                    <p class="mtext">12 Internal Pages</p>
-                    <p class="mtext">Basic Assistance</p>
+                  <!--Card1 Dets-->
 
-                    <p class="mtext">7 Landing Pages</p>
+          <div class="c1">
+             <div class="top__line"></div>
+                <p class="c1__title">Personal</p>
+              <h1 class="c1__pricing">$57.99</h1>
+              <p class="monthly">MONTHLY</p>
 
-                 </div>
+              <div class="divider"></div>
 
-                 <div class="bot1">
-                    <p class="buy__now">BUY NOW</p>
+                 <h3>For Large Companies</h3>
 
-                </div>
-            </div>  
+                  <ul class="c1__text">
+                      <li>90 Templates</li>
+                      <li>27 Landing Pages</li>
+                      <li>37 Internal Pages</li>
+                      <li>Personal Assistance</li>
+                  </ul>
+                   <div class="divider"></div>
 
-          </div>
+                       <button class="c1_button">BUY NOW</button>
+         </div>
 
-           <div class="pcard--containe2">
-                <div class="top2">
-                    <p class="top2__text">BUSINESS</p>
-                    <p class="price2">$37.99</p>
-                    <p class="per2">MONTHLY</p>
-                 </div>
 
-                 <div class="middle2">
-                    <p class="mtitle2">For Small Businesses</p>
-                    <p class="mtext2">60 Templates</p>
-                    <p class="mtext2">15 Internal Pages</p>
-                    <p class="mtext2">Internal Assistance</p>
+                    <!--Card2 Dets-->
 
-                    <p class="mtext2">7 Landing Pages</p>
+        <div class="c2">
+             <div class="top__line2"></div>
+                <p class="c2__title">Professional</p>
+              <h1 class="c2__pricing">$97.99</h1>
+              <p class="monthlyc2">MONTHLY</p>
 
-                 </div>
+              <div class="divider"></div>
 
-                 <div class="bot1">
-                    <p class="buy__now2">BUY NOW</p>
+                 <h3>For Large Companies</h3>
 
-                </div>
-            </div>  
-            <div class="pcard--container">
-                <div class="top1">
-                    <p>ENTERPRISE</p>
-                    <p class="price1">$57.99</p>
-                    <p class="per1">MONTHLY</p>
+                  <ul class="c2__text">
+                      <li>90 Templates</li>
+                      <li>27 Landing Pages</li>
+                      <li>37 Internal Pages</li>
+                      <li>Personal Assistance</li>
+                  </ul>
+                   <div class="divider"></div>
 
-                 </div>
+                       <button class="c2_button">BUY NOW</button>
+         </div>
 
-                 <div class="middle1">
-                    <p class="mtitle">For Large Companies</p>
-                    <p class="mtext">90 Templates</p>
-                    <p class="mtext">27 Landing Pages</p>
-                    <p class="mtext">37 Internal Pages</p>
+                    <!--Card3 Dets-->
 
-                    <p class="mtext"> Personal Assistance
-                 </div>
+         <div class="c3">
+             <div class="top__line3"></div>
+                <p class="c3__title">Enterprise</p>
+              <h1 class="c3__pricing">$197.99</h1>
+              <p class="monthly">MONTHLY</p>
 
-                 <div class="bot1">
-                    <p class="buy__now3">BUY NOW</p>
+              <div class="divider"></div>
 
-                </div>
-            </div>  
+                 <h3>For Large Companies</h3>
 
-          </div>
+                  <ul class="c3__text">
+                      <li>90 Templates</li>
+                      <li>27 Landing Pages</li>
+                      <li>37 Internal Pages</li>
+                      <li>Personal Assistance</li>
+                  </ul>
+                   <div class="divider"></div>
+
+                       <button class="c3_button">BUY NOW</button>
+         </div>
+
+
+
+
+
+
+
+
+
+
       </div>
-      </div>
-
-      </div>
-
           
     </section>
 
