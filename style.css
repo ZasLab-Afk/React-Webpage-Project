@@ -1319,8 +1319,10 @@ span {
     
         .footer__container {
             width: 100%;
-            flex-direction: column;
+            flex-direction: flex;
             align-items: center;
+            margin-right: 0;
+
         }
 
         .footer__social--icons {
@@ -1355,6 +1357,17 @@ span {
             margin-bottom: 50px;
         }
 
+        .get__started-text-container {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .get__started--text {
+            margin-left: 0;
+        
+        }
+
 
         .get__started--container {
             
@@ -1362,10 +1375,22 @@ span {
             align-items: center;
             text-align: center;
             margin-bottom: 7rem;
+            margin-left: 30px;
+            margin-right: 20px;
 
         }
 
+        .get__started--text {
+            width: 100%;
+            font-size: 2rem;
+            margin-left: 0;
+            align-items: center;
+            padding: 50px;
+        }
+
         .get__started--btn-container {
+            display:flex;
+            justify-content: center;
             flex-direction: column;
             gap: 1rem;
             margin-top: 20px;
@@ -1375,6 +1400,7 @@ span {
             margin-top: 5em;
             margin:auto;
             width: 100%;
+            margin-right: 0;
         }
 
         .footer__copyright {
@@ -1383,6 +1409,10 @@ span {
             align-items: center;
             gap: 10px;
             
+        }
+
+        .footer__main--title {
+            font-size: 20px;
         }
 
         .footer__production--title, .footer__press--title, .footer__team--title, .footer__legal--title {
